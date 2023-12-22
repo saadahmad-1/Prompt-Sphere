@@ -29,7 +29,7 @@ const Nav = () => {
           height={30}
           className="object-contain"
         />
-        <p className="logo_text">PromptSphere</p>
+        <p className="logo_text">PromptUp</p>
       </Link> 
 
       {/* Desktop Nav */}
