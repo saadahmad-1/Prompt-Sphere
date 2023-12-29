@@ -30,6 +30,14 @@ const Feed = () => {
     const response = await fetch("/api/prompt");
     const data = await response.json();
 
+    if (Array.isArray(data)) {
+      console.log("API response is an array");
+    } else if (typeof data === "object") {
+      console.log("API response is an object");
+    } else {
+      console.log("API response is neither an array nor an object");
+    }
+
     setAllPosts(data);
   };
 
@@ -87,7 +95,7 @@ const Feed = () => {
           handleTagClick={handleTagClick}
         />
       ) : (
-        <PromptCardList data={allPosts} handleTagClick={handleTagClick} />
+        <PromptCardList data={Object.values(allPosts)} handleTagClick={handleTagClick} />
       )}
     </section>
   );
