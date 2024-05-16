@@ -16,7 +16,7 @@ Getting Started
 To get started with PromptUp on your local machine, follow these simple steps:
 
 Clone the Repository:
-git clone https://github.com/your-username/promptup.git
+git clone https://github.com/saadahmad-1/PromptUp.git
 
 Install Dependencies:
 cd promptup
